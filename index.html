@@ -24,7 +24,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              'gradient-start': "#FF8938",
+              'gradient-end' :"#F00 ",
             },
           },
         },
@@ -42,9 +43,9 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+    <header class="max-w-6xl mx-auto">
+      <div class="">
+        <div class="flex justify-between my-16 items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-7xl font-extrabold">
               It's good <br />
@@ -55,10 +56,13 @@
               Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
               Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+              Explore More
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
           </div>
           <div>
-            <img src="images/banner.png" class="max-w-sm" />
+            <img src="images/banner.png" class="" />
             <div
               class="flex items-center -mt-16 gap-4 drop-shadow-lg bg-white p-5 w-60 rounded-xl"
             >
@@ -273,7 +277,10 @@
             <figure><img src="images/news-1.png" alt="Shoes" /></figure>
             <div class="card-body space-y-3">
               <p class="font-medium text-[#777]">Feb 05, 2027</p>
-              <h2 class="text-xl font-extrabold">Collecting 8 points for <br> discount</h2>
+              <h2 class="text-xl font-extrabold">
+                Collecting 8 points for <br />
+                discount
+              </h2>
               <p class="font-medium text-[#777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
@@ -285,7 +292,10 @@
             <figure><img src="images/news-2.png" alt="Shoes" /></figure>
             <div class="card-body space-y-3">
               <p class="font-medium text-[#777]">Feb 05, 2027</p>
-              <h2 class="text-xl font-extrabold">Collecting 8 points for <br> discount</h2>
+              <h2 class="text-xl font-extrabold">
+                Collecting 8 points for <br />
+                discount
+              </h2>
               <p class="font-medium text-[#777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
@@ -297,7 +307,10 @@
             <figure><img src="images/news-3.png" alt="Shoes" /></figure>
             <div class="card-body space-y-3">
               <p class="font-medium text-[#777]">Feb 05, 2027</p>
-              <h2 class="text-xl font-extrabold">Collecting 8 points for <br> discount</h2>
+              <h2 class="text-xl font-extrabold">
+                Collecting 8 points for <br />
+                discount
+              </h2>
               <p class="font-medium text-[#777]">
                 There are many variations of passages of Lorem Ipsum available.
               </p>
@@ -307,6 +320,57 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+      <div class="flex justify-between my-24">
+        <img src="images/cup.png" alt="" />
+        <p>
+          <span>Ready to get started?</span>
+          <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+        </p>
+      </div>
+      <div class="footer ">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+          <header class="footer-title">Newsletter</header>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="py-4 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end rounded-full">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="font-medium text-center mt-10 text-[#494949]">
+        <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
